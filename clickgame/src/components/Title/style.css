@@ -4,4 +4,9 @@
   font-size: 3rem;
   color: #2A77AE;
   margin-bottom: 50px;
+  background-color: beige;
+}
+
+ul {
+  list-style-type: none;
 }

@@ -19,7 +19,7 @@ class App extends Component {
     }
     return array;
 }
-  removeFriend = id => {
+  chooseCard = id => {
     let score = this.state.score;
     let bestScore = this.state.bestScore;
     if(this.state.clicked.includes(id)){
@@ -57,7 +57,7 @@ class App extends Component {
         />
         {this.state.friends.map(friend => (
           <FriendCard
-            removeFriend={this.removeFriend}
+            chooseCard={this.chooseCard}
             id={friend.id}
             key={friend.id}
             name={friend.name}
